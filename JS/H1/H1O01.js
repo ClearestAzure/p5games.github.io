@@ -6,7 +6,6 @@ function setup() {
 }
 
 function draw() {
-  // groene cirkel zonder rand
   
   noStroke();
   fill('green');
