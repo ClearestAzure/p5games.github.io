@@ -28,7 +28,13 @@ function draw() {
   // EINDE aanpassing
   pop();
   translate(140,0);
-  rect(0,0,100,100);
+  push();
+    stroke('cornsilk');
+   strokeWeight(20);
+    fill('teal');
+   translate(0,40);
+   rect(0,0,100,100);
+  pop();
   translate(140,0);
   rect(0,0,100,100);
 }
