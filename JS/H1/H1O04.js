@@ -33,5 +33,5 @@ function draw() {
   // VERVANG DEZE REGEL door een regel die het groen van de boom tekent met behulp van ellipse
   // Als je een cirkel wilt tekenen met diameter 300 kun je ellipse(0,0,300) gebruiken.
   // Als je een ellipse wilt maken met breedte 300 en hoogte 500, dan moet je een parameter toevoegen: ellipse(0,0,300,500).
-  ellipse (320,240,100,150);
+  ellipse (320,230,100,150);
 }
