@@ -1,5 +1,5 @@
-var variabeleA = 21;
-var variabeleB = 14;
+var variabeleA = 13;
+var variabeleB = 4;
 var uitkomst;
 
 function setup() {
@@ -13,10 +13,10 @@ function setup() {
 }
 
 function draw() {
-  uitkomst = variabeleA+variabeleB;
+  uitkomst = variabeleA*variabeleB;
   // Schrijf de rekensom op het scherm
   
-  text("De som " + variabeleA+ " + " + variabeleB + " heeft als uitkomst: " + uitkomst,50,50);
+  text("De som " + variabeleA+ " x " + variabeleB + " heeft als uitkomst: " + uitkomst,50,50);
 
   translate(50,100);
   fill('dodgerblue');
