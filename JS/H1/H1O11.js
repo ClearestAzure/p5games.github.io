@@ -8,7 +8,7 @@ function setup() {
   textSize(30);
   stroke('white');
   strokeWeight(10);
-  frameRate(10);
+  frameRate(60);
 }
 
 function draw() {
@@ -19,5 +19,5 @@ function draw() {
   text("Het middelpunt van de cirkel bevindt zich in [x,y] = [" + horizontaalA + "," + verticaal + "]",10,30);
   fill('dodgerblue');
   ellipse(horizontaalA,verticaal,200);
-  horizontaalA += 2;
+  horizontaalA += 10;
 }
