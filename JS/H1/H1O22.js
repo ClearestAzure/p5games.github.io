@@ -19,7 +19,7 @@ function draw() {
 
   text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
   
-  if (mouseX >= width - 30) {
+  if (mouseX >= width - 30 || mouseX <= width - 420  ) {
     kleur='red';
   }
   else {
