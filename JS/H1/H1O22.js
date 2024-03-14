@@ -16,20 +16,28 @@ function draw() {
   
   mouseX=constrain(mouseX,25,width - 25);
   mouseY=constrain(mouseY,25,height - 25);
+  if (mouseX <= 225 ) {
+    background('yellow');
+  }
+  else {
+    background('white');
+  }
 
-  text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
-  
-  if (mouseX >= width - 30 || mouseX <= width - 420  ) {
+  if (mouseX >= width - 30 || mouseX <= width - 420 || mouseY >= height - 30 || mouseY <= height - 420 || afstand <= 85) {
     kleur='red';
   }
   else {
     kleur='indianred';
   }
+
+  text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
   
+ 
+  // drawing black circle and distance from center
   ellipse(width / 2,height / 2,100);
   tekenJos(mouseX,mouseY,kleur);
-  afstand=dist(315,105,225,225);
-  text(afstand,10,40);
+  afstand=dist(mouseX,mouseY,225,225);
+  text("Afstand is | "+ afstand,10,40);
 }
 
 function tekenJos(x,y,kleur) {
