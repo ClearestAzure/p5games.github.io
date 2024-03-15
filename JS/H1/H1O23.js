@@ -19,11 +19,19 @@ function draw() {
   if (keyIsDown(DOWN_ARROW)) {
     y += 5;
   }
+  if (keyIsDown(LEFT_ARROW)) {
+    x -= 5;
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    x +=5;
+  }
+
 
   y = constrain(y,0,height - 100);
+  x = constrain(x,0,width - 100);
 
-  if (y >= 75 && y <= 225) {
-    fill('chartreuse');
+  if (y >= 75 && y <= 225 && x >= 700 && x <= 875 ) {
+    fill('green');
   }
   else {
     fill('darkkhaki');
