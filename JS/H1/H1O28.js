@@ -19,13 +19,21 @@ function draw() {
   // tekenen rode bladeren
   
   fill(178, 34, 34,.7);
-  ellipse(0,0,400,50);
-  rotate(360 / aantal);
-
+  for (var n=0; n<=aantal; n++){
+    ellipse(0,0,400,50);
+    rotate(360 / aantal);
   
-  // gele vulkleur
+  }
 
+  // gele vulkleur
   fill(255, 195, 0,0.5);
+  for (var p=0; p <= aantal; p++){
+   rect (0,0,75,75)
+    rotate(360 / aantal);
+  
+  }
+
+ 
 
 
   if (keyIsDown(LEFT_ARROW) && aantal >= 2) {
